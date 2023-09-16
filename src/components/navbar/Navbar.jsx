@@ -1,10 +1,19 @@
 import React from 'react'
-import { Text,Box,Flex,HStack,Link,Button } from '@chakra-ui/react'
+import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer } from '@chakra-ui/react'
 
 export default function Navbar() {
   return (
-	<Box>
-
+	<Box p={5}>
+		<HStack>
+		<Heading>Evolutiva</Heading>
+		<Spacer/>
+		<Link>Inicio</Link>
+		<Link>Quienes somos</Link>
+		<Link>Porque nosotros</Link>
+		<Link>Servicios</Link>
+		<Link>Clientes</Link>
+		<Link>Contacto</Link>
+		</HStack>
 	</Box>
   )
 }
