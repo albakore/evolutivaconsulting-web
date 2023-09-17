@@ -1,9 +1,10 @@
 'use client'
 
-import { Text, HStack, VStack, Flex,Box, StackDivider } from "@chakra-ui/react"
+import { Text, HStack, VStack, Flex,Box, StackDivider,Divider } from "@chakra-ui/react"
 import Navbar from "@/components/navbar/Navbar"
 import Hero from "@/components/hero/Hero"
 import Seccion from "@/components/seccion/Seccion"
+import Footer from "@/components/footer/Footer"
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero/>
 
       <Seccion>
-        <HStack>
+        <HStack >
           <Text fontSize={'5xl'} fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'} w='800px'>
           Somos especialistas en marketing y comunicación política
           </Text>
@@ -30,6 +31,8 @@ export default function Home() {
         </HStack>
         
       </Seccion>
+
+      
 
       <Seccion>
         <VStack justifyContent={'start'} alignItems={'start'}>
@@ -51,8 +54,16 @@ export default function Home() {
         
       </Seccion>
 
+      <Divider borderColor='gray.200' />
+      
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <Text fontSize={'6xl'}  align='center' fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'}>
+            SERVICIOS
+        </Text>
+      </Seccion>
+
+      <Seccion>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>01</Text>
@@ -69,7 +80,7 @@ export default function Home() {
       </Seccion>
       
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>02</Text>
@@ -90,7 +101,7 @@ export default function Home() {
       </Seccion>
 
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>03</Text>
@@ -109,7 +120,7 @@ export default function Home() {
 
 
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>04</Text>
@@ -131,7 +142,7 @@ export default function Home() {
       </Seccion>
 
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>05</Text>
@@ -148,7 +159,7 @@ export default function Home() {
       </Seccion>
       
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>06</Text>
@@ -165,7 +176,7 @@ export default function Home() {
       </Seccion>
       
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0}>
+        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'}>07</Text>
@@ -179,6 +190,8 @@ export default function Home() {
         </HStack>
         
       </Seccion>
+
+      <Footer />
       
     </main>
   )
