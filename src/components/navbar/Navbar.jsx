@@ -1,6 +1,6 @@
 import React from 'react'
 import {NextLink} from 'next/link'
-import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer,Image, Input, IconButton } from '@chakra-ui/react'
+import { Text,Box,Flex,HStack,Button,Heading,Container,Spacer,Image, Link as LinkChakra,Input, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
 	Drawer,
@@ -11,6 +11,7 @@ import {
 	DrawerCloseButton,
 	useDisclosure
   } from '@chakra-ui/react'
+  import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export default function Navbar() {
@@ -67,12 +68,39 @@ function DrawerButton({display}) {
   function LinkDirecciones(props){
 	return(
 		<Flex {...props}>
-			<Link href='#inicio' as={NextLink}>Inicio</Link>
-			<Link>Quienes somos</Link>
-			<Link href='#porqueNosotros' as={NextLink}>Porque nosotros</Link>
-			<Link href='#servicios' as={NextLink}>Servicios</Link>
-			<Link>Clientes</Link>
-			<Link>Contacto</Link>
+			<LinkChakra  
+    				to="inicio"
+					smooth={true}
+					duration={200}
+					as={Link} 
+					>
+						Inicio
+			</LinkChakra>
+
+			<LinkChakra   
+			        activeClass="active"
+    				to="quienesSomos"
+					smooth={true}
+					offset={-70}
+					duration={500}
+					as={Link} 
+					>Quienes somos</LinkChakra>
+
+			<LinkChakra 
+    				to="porqueNosotros"
+					smooth={true}
+					duration={500} 
+					as={Link} 
+					 >Porque nosotros</LinkChakra>
+
+			<LinkChakra
+    				to="servicios"
+					smooth={true}
+					duration={500}
+					as={Link} 
+					>Servicios</LinkChakra>
+			<LinkChakra>Clientes</LinkChakra>
+			<LinkChakra>Contacto</LinkChakra>
 		</Flex>
 	)
   }

@@ -8,9 +8,12 @@ import Footer from "@/components/footer/Footer"
 
 export default function Home() {
   return (
-    <main >
+    <main  >
       <Navbar />
+
       <Hero id='inicio'/>
+
+      <Box overflowY={'scroll'} scrollBehavior={'smooth'}>
 
       <Seccion>
         <Flex direction={{base:'column', md:'row'}} alignItems={'center'} gap='3' justifyContent={'center'} >
@@ -70,8 +73,10 @@ export default function Home() {
       <Seccion>
         <Flex direction={{base:'column',lg:'row'}} justifyContent={{base:'center',lg:'start'}} alignItems={{base:'start',md:'center',lg:'start'}} gap={5} divider={<StackDivider borderColor='gray.200' />}>
 
-          <HStack alignItems={'end'} justifyContent={{base:'center',lg:'start'}}  w={{base:'100%',lg:'50%'}}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>01</Text>
+
+          <HStack alignItems={'end'}  w={'50%'}>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>01</Text>
+
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Construcción de Marca.</Text>
           </HStack>
 
@@ -88,7 +93,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>02</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>02</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Marketing Digital</Text>
           </HStack>
 
@@ -109,7 +114,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>03</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>03</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Sitios Web</Text>
           </HStack>
 
@@ -128,7 +133,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>04</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>04</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> CRM</Text>
           </HStack>
 
@@ -150,7 +155,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>05</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>05</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Coaching</Text>
           </HStack>
 
@@ -167,7 +172,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>06</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>06</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Capacitaciones</Text>
           </HStack>
 
@@ -184,7 +189,7 @@ export default function Home() {
         <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
 
           <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>07</Text>
+          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>07</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Comunicación estratégica</Text>
           </HStack>
 
@@ -195,6 +200,7 @@ export default function Home() {
         </HStack>
         
       </Seccion>
+      </Box>
 
       <Footer />
       
