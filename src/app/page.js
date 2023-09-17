@@ -5,15 +5,16 @@ import Navbar from "@/components/navbar/Navbar"
 import Hero from "@/components/hero/Hero"
 import Seccion from "@/components/seccion/Seccion"
 import Footer from "@/components/footer/Footer"
+import ItemServicio from "@/components/seccion/Servicios"
 
 export default function Home() {
   return (
-    <main  >
+    <main style={{overflow:'hidden'}} >
       <Navbar />
 
       <Hero id='inicio'/>
 
-      <Box overflowY={'scroll'} scrollBehavior={'smooth'}>
+      
 
       <Seccion>
         <Flex direction={{base:'column', md:'row'}} alignItems={'center'} gap='3' justifyContent={'center'} >
@@ -70,137 +71,70 @@ export default function Home() {
         </Text>
       </Seccion>
 
-      <Seccion>
-        <Flex direction={{base:'column',lg:'row'}} justifyContent={{base:'center',lg:'start'}} alignItems={{base:'start',md:'center',lg:'start'}} gap={5} divider={<StackDivider borderColor='gray.200' />}>
-
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>01</Text>
-
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Construcción de Marca.</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'center'} alignItems={'start'} w={{md:'auto', lg:'50%'}} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Investigación de mercado y posicionamiento.  </Text>
-            <Text> Diferenciación y valor agregado </Text>
-          </VStack>
-          
-        </Flex>
-        
-      </Seccion>
+      <ItemServicio 
+        numero='01'
+        titulo='Construcción de Marca.'
+        >
+          <Text> Investigación de mercado y posicionamiento.  </Text>
+          <Text> Diferenciación y valor agregado </Text>
+      </ItemServicio>
       
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>02</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Marketing Digital</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Content manager  </Text>
-            <Text> Planificación estratégica creativa, seguimiento y métricas. </Text>
-            <Text> Meta Ads. </Text>
-            <Text> Google Ads. </Text>
-            <Text> Twitter Ads. </Text>
-            <Text> Linkedin Ads. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
-
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>03</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Sitios Web</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Desarrollo web. </Text>
-            <Text> Posicionamiento SEM. </Text>
-            <Text> Posicionamiento SEO. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
-
-
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>04</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> CRM</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Construcción de base de datos. </Text>
-            <Text> Campaña de email marketing. </Text>
-            <Text> Datos inteligentes. </Text>
-            <Text> Proyección. </Text>
-            <Text> Aumentar las ventas. </Text>
-            <Text> Conseguir mas clientes. </Text>
-            <Text> Retencion de clientes. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
-
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>05</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Coaching</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Análisis de discurso. </Text>
-            <Text> Técnica discursiva. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
+      <ItemServicio 
+        numero='02'
+        titulo='Marketing Digital.'
+        >
+          <Text> Content manager  </Text>
+          <Text> Planificación estratégica creativa, seguimiento y métricas. </Text>
+          <Text> Meta Ads. </Text>
+          <Text> Google Ads. </Text>
+          <Text> Twitter Ads. </Text>
+          <Text> Linkedin Ads. </Text>
+      </ItemServicio>
       
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>06</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Capacitaciones</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Redes sociales. </Text>
-            <Text> Coaching. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
+      <ItemServicio 
+        numero='03'
+        titulo='Sitios Web.'
+        >
+          <Text> Desarrollo web. </Text>
+          <Text> Posicionamiento SEM. </Text>
+          <Text> Posicionamiento SEO. </Text>
+      </ItemServicio>
       
-      <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
-
-          <HStack alignItems={'end'}  w={'50%'}>
-          <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} marginRight={5} textShadow={'0 4px 10px'}>07</Text>
-          <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}> Comunicación estratégica</Text>
-          </HStack>
-
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
-            <Text> Diseño de mensajes políticos efectivos y elaboración de discursos y comunicados de prensa. </Text>
-          </VStack>
-          
-        </HStack>
-        
-      </Seccion>
-      </Box>
+      <ItemServicio 
+        numero='04'
+        titulo='CRM.'
+        >
+          <Text> Construcción de base de datos. </Text>
+          <Text> Campaña de email marketing. </Text>
+          <Text> Datos inteligentes. </Text>
+          <Text> Proyección. </Text>
+          <Text> Aumentar las ventas. </Text>
+          <Text> Conseguir mas clientes. </Text>
+          <Text> Retencion de clientes. </Text>
+      </ItemServicio>
+      
+      <ItemServicio 
+        numero='05'
+        titulo='Coaching.'
+        >
+          <Text> Análisis de discurso. </Text>
+          <Text> Técnica discursiva. </Text>
+      </ItemServicio>
+      
+      <ItemServicio 
+        numero='06'
+        titulo='Capacitaciones.'
+        >
+          <Text> Redes sociales. </Text>
+          <Text> Coaching. </Text>
+      </ItemServicio>
+      
+      <ItemServicio 
+        numero='07'
+        titulo='Comunicación estratégica.'
+        >
+          <Text> Diseño de mensajes políticos efectivos y elaboración de discursos y comunicados de prensa. </Text>
+      </ItemServicio>
 
       <Footer />
       
