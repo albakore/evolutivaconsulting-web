@@ -9,14 +9,14 @@ import ItemServicio from "@/components/seccion/Servicios"
 
 export default function Home() {
   return (
-    <main style={{overflow:'hidden'}} >
-      <Navbar />
+    <Box as={'main'} mt={{base: '80px', lg:'115px'}} style={{overflow:'hidden'}}>
+      <Navbar maxWidth={{base: '6xl', lg: '100%'}} />
 
       <Hero id='inicio'/>
 
       
 
-      <Seccion>
+      <Seccion id="quienesSomos">
         <Flex direction={{base:'column', md:'row'}} alignItems={'center'} gap='3' justifyContent={'center'} >
           <Text 
           fontSize={{base:'4xl',md:'5xl'}} 
@@ -138,6 +138,6 @@ export default function Home() {
 
       <Footer />
       
-    </main>
+    </Box>
   )
 }
