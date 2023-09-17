@@ -1,19 +1,22 @@
 import React from 'react'
-import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer } from '@chakra-ui/react'
+import {NextLink} from 'next/link'
+import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer,Image } from '@chakra-ui/react'
 
 export default function Navbar() {
   return (
-	<Box p={5} as='header'>
-		<HStack as='nav'>
-		<Heading>Evolutiva</Heading>
+	<Container as='header' maxW={'6xl'} paddingBlock={5}>
+		<HStack as='nav' >
+		<Image src={'logos/LogoColor_EC.svg'} w={200} alt='evolutiva consulting' />
 		<Spacer/>
-		<Link>Inicio</Link>
-		<Link>Quienes somos</Link>
-		<Link>Porque nosotros</Link>
-		<Link>Servicios</Link>
-		<Link>Clientes</Link>
-		<Link>Contacto</Link>
+		<HStack gap={4} fontSize={'lg'} fontWeight={700} textTransform={'uppercase'} m={0}>
+			<Link href='#inicio' as={NextLink}>Inicio</Link>
+			<Link>Quienes somos</Link>
+			<Link href='#porqueNosotros' as={NextLink}>Porque nosotros</Link>
+			<Link href='#servicios' as={NextLink}>Servicios</Link>
+			<Link>Clientes</Link>
+			<Link>Contacto</Link>
 		</HStack>
-	</Box>
+		</HStack>
+	</Container>
   )
 }
