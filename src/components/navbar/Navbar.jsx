@@ -21,15 +21,12 @@ export default function Navbar({ maxWidth }) {
 		<HStack as='nav'   >
 		<Image src={'logos/LogoColor_EC.svg'} w={{base: '100px',lg: '200px'}} alt='evolutiva consulting' />
 		<Spacer/>
-		<LinkDirecciones 
-		m={0} 
-		gap={{base:3, md:3, lg:2, xl:4}} 
-		display={{base:'none', md:'none', lg:'flex'}}
-		fontSize={{base: '100px', md: '12px', lg: 'lg', xl: 'xl'}} 
-		fontWeight={700} 
-		textTransform={'uppercase'} 
-		/>
-		<DrawerButton display={{base:'initial', lg:'none'}}/>
+		<Link>Inicio</Link>
+		<Link>Quienes somos</Link>
+		<Link>Porque nosotros</Link>
+		<Link>Servicios</Link>
+		<Link>Clientes</Link>
+		<Link>Contacto</Link>
 		</HStack>
 	</Container>
   )
