@@ -3,8 +3,8 @@ import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer } from '@chak
 
 export default function Navbar() {
   return (
-	<Box p={5}>
-		<HStack>
+	<Box p={5} as='header'>
+		<HStack as='nav'>
 		<Heading>Evolutiva</Heading>
 		<Spacer/>
 		<Link>Inicio</Link>
