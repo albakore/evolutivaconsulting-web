@@ -13,11 +13,16 @@ export default function Home() {
       <Hero id='inicio'/>
 
       <Seccion>
-        <HStack >
-          <Text fontSize={'5xl'} fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'} w='800px'>
+        <Flex direction={{base:'column', md:'row'}} alignItems={'center'} gap='3' justifyContent={'center'} >
+          <Text 
+          fontSize={{base:'4xl',md:'5xl'}} 
+          fontWeight={800} 
+          lineHeight={{base:'38px', md:'46px'}} 
+          textTransform={'uppercase'} 
+          w={{base:'auto',md:'800px'}}>
           Somos especialistas en marketing y comunicación política
           </Text>
-          <Text fontSize={'1xl'} fontWeight={400}  w='1000px'> 
+          <Text fontSize={'1xl'} fontWeight={400}  w={{base:'auto',md:'800px',lg:'1000px'}}> 
           Ofrecemos servicios que incluyen asesoramiento en redes sociales, 
           publicidad estratégica y coaching político. Desde una mirada y un 
           know-how integral en el desarrollo de marcas y campañas publicitarias, 
@@ -28,7 +33,7 @@ export default function Home() {
           tu presencia en este ámbito, somos tu aliado estratégico.
 
           </Text>
-        </HStack>
+        </Flex>
         
       </Seccion>
 
@@ -63,19 +68,19 @@ export default function Home() {
       </Seccion>
 
       <Seccion>
-        <HStack justifyContent={'start'} alignItems={'start'} gap={0} divider={<StackDivider borderColor='gray.200' />}>
+        <Flex direction={{base:'column',lg:'row'}} justifyContent={{base:'center',lg:'start'}} alignItems={{base:'start',md:'center',lg:'start'}} gap={5} divider={<StackDivider borderColor='gray.200' />}>
 
-          <HStack alignItems={'end'}  w={'50%'}>
+          <HStack alignItems={'end'} justifyContent={{base:'center',lg:'start'}}  w={{base:'100%',lg:'50%'}}>
           <Text fontSize={'8rem'} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'teal.400'} textShadow={'0 4px 10px'}>01</Text>
           <Text  fontSize={'4xl'} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>Construcción de Marca.</Text>
           </HStack>
 
-          <VStack gap={0} fontSize={'xl'} justifyContent={'start'} alignItems={'start'} w={'50%'} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
+          <VStack gap={0} fontSize={'xl'} justifyContent={'center'} alignItems={'start'} w={{md:'auto', lg:'50%'}} paddingInline={10} fontWeight={400} divider={<StackDivider borderColor='gray.200' />}>
             <Text> Investigación de mercado y posicionamiento.  </Text>
             <Text> Diferenciación y valor agregado </Text>
           </VStack>
           
-        </HStack>
+        </Flex>
         
       </Seccion>
       

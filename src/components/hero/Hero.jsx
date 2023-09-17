@@ -6,10 +6,11 @@ export default function Hero({id}) {
 	<Box paddingBlock={'80px'}  bg={'blue.100'} id={id}>
 		<Container maxW={'6xl'}>
 			<Text 
-			fontSize={{base:'4xl',lg:'7xl'}} 
-			w={{base:'350px',lg:'900px'}} 
+			wordBreak={'break-word'}
+			fontSize={{base:'4xl',sm:'5xl',md:'6xl',lg:'7xl'}} 
+			w={{base:'450px',sm:'480px', md:'560px',lg:'700px'}} 
 			fontWeight={800} 
-			lineHeight={'80px'} 
+			lineHeight={{base:'40px',sm:'52px', md:'50px', lg:'80px'}} 
 			textTransform={'uppercase'}
 			>
 				Desarrollamos marcas únicas.
