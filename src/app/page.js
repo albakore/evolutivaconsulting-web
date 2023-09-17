@@ -66,7 +66,7 @@ export default function Home() {
       <Divider borderColor='gray.200' />
       
       <Seccion id='servicios'>
-        <Text fontSize={'6xl'}  align='center' fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'} textShadow={'0 4px 10px #91919147'}>
+        <Text fontSize={{base:'3rem',md:'6xl', lg:'6xl'}}  align='center' fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'} textShadow={'0 4px 10px #91919147'}>
             SERVICIOS
         </Text>
       </Seccion>
