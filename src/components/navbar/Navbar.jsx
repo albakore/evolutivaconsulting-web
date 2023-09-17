@@ -14,9 +14,9 @@ import {
   import { Link, animateScroll as scroll } from "react-scroll";
 
 
-export default function Navbar() {
+export default function Navbar({ maxWidth }) {
   return (
-	<Container as='header' maxW={{base: '6xl', lg: '6xl'}} paddingBlock={5}>
+	<Container position={'fixed'} top={0} backgroundColor={'white'} boxShadow={'md'} as='header' maxW={ maxWidth } paddingBlock={5}>
 		<HStack as='nav'   >
 		<Image src={'logos/LogoColor_EC.svg'} w={{base: '100px',lg: '200px'}} alt='evolutiva consulting' />
 		<Spacer/>
@@ -40,7 +40,7 @@ function DrawerButton({display}) {
   
 	return (
 	  <Box display={display}>
-		<IconButton  onClick={onOpen} variant={'ghost'} fontSize='40px' icon={<HamburgerIcon />}/>
+		<IconButton onClick={onOpen} variant={'ghost'} fontSize='40px' icon={<HamburgerIcon />}/>
 		<Drawer
 		  isOpen={isOpen}
 		  placement='right'
@@ -69,6 +69,7 @@ function DrawerButton({display}) {
 	return(
 		<Flex {...props}>
 			<LinkChakra  
+					offset={-60}
     				to="inicio"
 					smooth={true}
 					duration={200}
@@ -77,16 +78,17 @@ function DrawerButton({display}) {
 						Inicio
 			</LinkChakra>
 
-			<LinkChakra   
+			<LinkChakra
+					offset={-60}
 			        activeClass="active"
     				to="quienesSomos"
 					smooth={true}
-					offset={-70}
 					duration={500}
 					as={Link} 
 					>Quienes somos</LinkChakra>
 
 			<LinkChakra 
+					offset={-60}
     				to="porqueNosotros"
 					smooth={true}
 					duration={500} 
@@ -94,6 +96,7 @@ function DrawerButton({display}) {
 					 >Porque nosotros</LinkChakra>
 
 			<LinkChakra
+					offset={-60}
     				to="servicios"
 					smooth={true}
 					duration={500}
