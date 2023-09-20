@@ -16,7 +16,7 @@ export default function Home() {
 
       
 
-      <Seccion id="quienesSomos">
+      <Seccion  id="quienesSomos">
         <Flex direction={{base:'column', md:'row'}} alignItems={'center'} gap='3' justifyContent={'center'} >
           <Text 
           fontSize={{base:'4xl',md:'5xl'}} 
@@ -40,6 +40,7 @@ export default function Home() {
         </Flex>
         
       </Seccion>
+      <Divider borderColor='gray.300' />
 
       
 
@@ -63,7 +64,7 @@ export default function Home() {
         
       </Seccion>
 
-      <Divider borderColor='gray.200' />
+      <Divider borderColor='gray.300' />
       
       <Seccion id='servicios'>
         <Text fontSize={{base:'3rem',md:'6xl', lg:'6xl'}}  align='center' fontWeight={800} lineHeight={'40px'} textTransform={'uppercase'} textShadow={'0 4px 10px #91919147'}>
@@ -72,6 +73,7 @@ export default function Home() {
       </Seccion>
 
       <ItemServicio 
+        
         numero='01'
         titulo='Construcción de Marca.'
         >
@@ -80,6 +82,7 @@ export default function Home() {
       </ItemServicio>
       
       <ItemServicio 
+        color={'cyan.50'}
         numero='02'
         titulo='Marketing Digital.'
         >
@@ -101,6 +104,7 @@ export default function Home() {
       </ItemServicio>
       
       <ItemServicio 
+        color={'cyan.50'}
         numero='04'
         titulo='CRM.'
         >
@@ -121,7 +125,8 @@ export default function Home() {
           <Text> Técnica discursiva. </Text>
       </ItemServicio>
       
-      <ItemServicio 
+      <ItemServicio
+        color={'cyan.50'}
         numero='06'
         titulo='Capacitaciones.'
         >
