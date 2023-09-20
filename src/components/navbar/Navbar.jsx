@@ -16,7 +16,7 @@ import {
 
 export default function Navbar({ maxWidth }) {
   return (
-	<Container position={'fixed'} top={0} backgroundColor={'white'} boxShadow={'md'} as='header' maxW={ maxWidth } paddingBlock={5}>
+	<Container zIndex={'1000'} position={'fixed'} top={0} backgroundColor={'white'} boxShadow={'md'} as='header' maxW={ maxWidth } paddingBlock={5}>
 		<HStack as='nav'   >
 		<Image src={'logos/LogoColor_EC.svg'} w={{base: '100px',lg: '200px'}} alt='evolutiva consulting' />
 		<Spacer/>

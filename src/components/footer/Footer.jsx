@@ -3,7 +3,7 @@ import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer,Image, Icon }
 
 export default function Footer() {
   return (
-	<Box bg={'teal.300'} as="footer">
+	<Box bg={'blue.200'} as="footer">
 		<Container maxW={{base: '6xl', lg: '6xl'}} paddingBlock={5}>
 			<HStack justifyContent={'space-between'} alignContent={'center'}>
 				<Box>
