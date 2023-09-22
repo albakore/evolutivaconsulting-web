@@ -4,8 +4,9 @@ import { Flex,Text,HStack,VStack,StackDivider } from '@chakra-ui/react'
 
 export default function ItemServicio({numero,titulo, children, color}) {
   return (
-	<Seccion color={color}>
+	<Seccion hoverColor={{bg:'cyan.100',transition:'background 0.3s ease'}} color={color}>
         <Flex 
+        
 		direction={{base:'column',lg:'row'}} 
 		justifyContent={{base:'center',lg:'start'}} 
 		alignItems={{base:'start',md:'center',lg:'start'}} 
@@ -13,7 +14,7 @@ export default function ItemServicio({numero,titulo, children, color}) {
 		>
 
           <HStack alignItems={'end'} justifyContent={{base:'start',lg:'start'}}  w={{base:'100%',lg:'50%'}}>
-            <Text fontSize={{base:'5rem',md:'5rem',lg:'8rem'}} letterSpacing={-15} fontWeight={200} lineHeight={'107px'} color={'blue.300'} textShadow={'0 4px 10px'} mr={5}>{numero}</Text>
+            <Text fontSize={{base:'4rem',md:'5rem',lg:'8rem'}} letterSpacing={{base:0, md:-15}} fontWeight={200} lineHeight={'107px'} color={'blue.300'} textShadow={'0 4px 10px'} mr={{base:2, md: 5}}>{numero}</Text>
             <Text fontSize={{base:'30px', md:'3xl',lg:'4xl'}} fontWeight={600} lineHeight={'40px'} textTransform={'uppercase'}>{titulo}</Text>
           </HStack>
 
