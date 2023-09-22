@@ -12,6 +12,7 @@ import {
 	useDisclosure
   } from '@chakra-ui/react'
   import { Link, animateScroll as scroll } from "react-scroll";
+import { useEffect } from 'react'
 
 
 export default function Navbar({ maxWidth }) {
@@ -32,7 +33,7 @@ export default function Navbar({ maxWidth }) {
 		</HStack>
 	</Container>
   )
-}
+}	
 
 function DrawerButton({display}) {
 	const { isOpen, onOpen, onClose } = useDisclosure()
@@ -55,7 +56,7 @@ function DrawerButton({display}) {
 			<DrawerHeader>Menu</DrawerHeader>
   
 			<DrawerBody>
-			  <LinkDirecciones onClick={onClose} direction={'column'} fontSize={{base:'2xl'}} fontWeight={700} textTransform={'uppercase'}/>
+			  <LinkDirecciones onclick={onClose} direction={'column'} fontSize={{base:'2xl'}} fontWeight={700} textTransform={'uppercase'}/>
 			</DrawerBody>
   
 			
@@ -66,44 +67,34 @@ function DrawerButton({display}) {
   }
 
   function LinkDirecciones(props){
+	  const {onclick} = props
+	  
+	//se mapea links, ruta y titulo
+	  const links = [
+		['inicio','Inicio'],
+		['quienesSomos','Quienes somos'],
+		['porqueNosotros','Porque nosotros'],
+		['servicios','Servicios'],
+		['contacto','Contacto'],
+	  ]
+	
 	return(
 		<Flex {...props}>
-			<LinkChakra  
-					offset={-60}
-    				to="inicio"
-					smooth={true}
-					duration={200}
-					as={Link} 
-					>
-						Inicio
-			</LinkChakra>
+			{
+				links.map((seccion)=>(
+					<LinkChakra
+						offset={-60}
+						to={seccion[0]}
+						smooth={true}
+						duration={200}
+						as={Link} 
+						onClick={onclick}
+						>
+							{seccion[1]}
+					</LinkChakra>
+				))
+			}
 
-			<LinkChakra
-					offset={-60}
-			        activeClass="active"
-    				to="quienesSomos"
-					smooth={true}
-					duration={500}
-					as={Link} 
-					>Quienes somos</LinkChakra>
-
-			<LinkChakra 
-					offset={-60}
-    				to="porqueNosotros"
-					smooth={true}
-					duration={500} 
-					as={Link} 
-					 >Porque nosotros</LinkChakra>
-
-			<LinkChakra
-					offset={-60}
-    				to="servicios"
-					smooth={true}
-					duration={500}
-					as={Link} 
-					>Servicios</LinkChakra>
-			<LinkChakra>Clientes</LinkChakra>
-			<LinkChakra>Contacto</LinkChakra>
 		</Flex>
 	)
   }

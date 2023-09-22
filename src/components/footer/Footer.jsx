@@ -7,7 +7,7 @@ export default function Footer() {
 		<Container maxW={{base: '6xl', lg: '6xl'}} paddingBlock={5}>
 			<HStack justifyContent={'space-between'} alignContent={'center'}>
 				<Box>
-				  <p>© 2023 Evolutiva Consulting, Inc. Todos los derechos reservados.</p>
+				  <Text fontSize={{ base: "13px", md: "13px", lg:'1.5rem' }}>© 2023 Evolutiva Consulting, Inc. Todos los derechos reservados.</Text>
 				</Box>
 
 				<HStack >
