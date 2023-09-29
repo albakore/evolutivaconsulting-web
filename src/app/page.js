@@ -7,7 +7,7 @@ import Seccion from "@/components/seccion/Seccion"
 import Footer from "@/components/footer/Footer"
 import { Servicios } from "@/components/servicios/Servicios"
 import { Contacto } from "@/components/contacto/Contacto"
-import ImageScroll from "@/components/scroll/ImageScroll"
+import Clientes from "@/components/clientes/Clientes"
 
 export default function Home() {
   return (
@@ -68,7 +68,7 @@ export default function Home() {
       
       <Divider borderColor='gray.300' />
       
-      <ImageScroll/>
+      <Contacto></Contacto>
       <Footer />
       
     </Box>
