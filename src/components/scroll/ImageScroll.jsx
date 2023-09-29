@@ -2,7 +2,7 @@ import { Flex, Image, Box, keyframes, HStack, VStack } from '@chakra-ui/react'
 import Seccion from '../seccion/Seccion';
 import React from 'react'
 
-export default function ImageScroll() {
+export default function ImageScroll({listaImg,segundos,replicar}) {
 
 	const animationKeyframes = keyframes`
 	0% { transform: translateX(0%); }
