@@ -31,9 +31,9 @@ export const Contacto = () => {
         >
           <VStack>
             
-            {Object.keys(contactos).map((redSocial)=>(
+            {Object.keys(contactos).map((redSocial, index)=>(
               (  
-                 <Button as={Link}  variant={'outline'}  colorScheme={'twitter'} padding={"15px"} borderRadius={"3px"} display="flex" alignItems={"center"} justifyContent={'center'} target="_blank" width={{base: "300px", md: '500px', lg:'700px'}} margin={0} href={contactos[redSocial][0]} mr={2}>
+                 <Button as={Link} key={index}  variant={'outline'}  colorScheme={'twitter'} padding={"15px"} borderRadius={"3px"} display="flex" alignItems={"center"} justifyContent={'center'} target="_blank" width={{base: "300px", md: '500px', lg:'700px'}} margin={0} href={contactos[redSocial][0]} mr={2}>
                     <Image width={7} height={7} margin={1} src={contactos[redSocial][1]} alt={contactos[redSocial]}
                     />
                     <Text  fontSize={{ base: '2xs', md: "2xl" }} fontWeight={800} lineHeight={{ base: "38px", md: "46px" }} textTransform={"uppercase"} w={{ base: "auto" }}
