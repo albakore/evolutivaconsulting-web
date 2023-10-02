@@ -6,7 +6,6 @@ import Hero from "@/components/hero/Hero"
 import Seccion from "@/components/seccion/Seccion"
 import Footer from "@/components/footer/Footer"
 import { Servicios } from "@/components/servicios/Servicios"
-import { Contacto } from "@/components/contacto/Contacto"
 import ImageScroll from "@/components/scroll/ImageScroll"
 
 export default function Home() {
@@ -68,7 +67,7 @@ export default function Home() {
       
       <Divider borderColor='gray.300' />
       
-      <ImageScroll/>
+      <ImageScroll></ImageScroll>
       <Footer />
       
     </Box>

@@ -1,9 +1,11 @@
 import React from 'react'
 import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer,Image, Icon } from '@chakra-ui/react'
+import { Contacto } from '../contacto/Contacto'
 
 export default function Footer() {
   return (
 	<Box bg={'blue.200'} as="footer">
+    <Contacto/>
 		<Container maxW={{base: '6xl', lg: '6xl'}} paddingBlock={5}>
 			<HStack justifyContent={'space-between'} alignContent={'center'}>
 				<Box>
