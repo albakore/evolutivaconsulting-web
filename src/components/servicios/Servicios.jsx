@@ -50,10 +50,7 @@ export const Servicios = () => {
         >
           <Text> Construcción de base de datos. </Text>
           <Text> Campaña de email marketing. </Text>
-          <Text> Datos inteligentes. </Text>
-          <Text> Proyección. </Text>
           <Text> Aumentar las ventas. </Text>
-          <Text> Conseguir mas clientes. </Text>
           <Text> Retencion de clientes. </Text>
       </ItemServicio>
       
