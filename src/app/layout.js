@@ -1,8 +1,8 @@
 'use client'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import { themeConfig } from '@/ThemeConfig'
 
 export const metadata = {
   title: 'Evolutiva',
@@ -15,8 +15,8 @@ export default function RootLayout({ children }) {
       <head>
         <title>Evolutiva Consulting</title>
       </head>
-      <body className={inter.className}>
-        <ChakraProvider>
+      <body>
+        <ChakraProvider resetCSS theme={themeConfig}>
           {children}
         </ChakraProvider>
       </body>
