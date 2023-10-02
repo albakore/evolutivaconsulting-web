@@ -7,10 +7,12 @@ import Seccion from "@/components/seccion/Seccion"
 import Footer from "@/components/footer/Footer"
 import { Servicios } from "@/components/servicios/Servicios"
 import ImageScroll from "@/components/scroll/ImageScroll"
+import DotBackground from "@/components/background/DotBackground"
 
 export default function Home() {
   return (
     <Box as={'main'} mt={{base: '80px', lg:'115px'}} style={{overflow:'hidden'}}>
+      <DotBackground/>
       <Navbar maxWidth={{base: '6xl', lg: '100%'}} />
 
       <Hero id='inicio'/>
@@ -63,7 +65,7 @@ export default function Home() {
 
       <Divider borderColor='gray.300' />
       
-      <Servicios></Servicios>
+      <Servicios/>
       
       <Divider borderColor='gray.300' />
       
