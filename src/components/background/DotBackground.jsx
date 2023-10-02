@@ -28,7 +28,7 @@ export default function DotBackground({ cantidad = 20 }) {
           color: '#bee3f8',
           top:`${Math.random()*100}%`,
           left: `${Math.random()*100}%`,
-          animationDuration: `${Math.random()*100}%`,
+          animationDuration: `${Math.random()*100}s`,
           animationDelay: `${-314 * index}s`, // Ajustar el retardo para cada punto
           transformOrigin: '9vw -5vh',
           boxShadow: `-50vmin 0 1.7401954773023416vmin currentColor`,
