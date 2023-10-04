@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Hero({id}) {
   return (
-	<Box paddingBlock={'80px'}  bg={'blue.100'} id={id}>
+	<Box paddingBlock={'80px'}   id={id} >
 		<Container maxW={'6xl'}>
 			<Text 
 			wordBreak={'break-word'}
