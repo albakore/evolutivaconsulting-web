@@ -81,8 +81,9 @@ function DrawerButton({display}) {
 	return(
 		<Flex {...props}>
 			{
-				links.map((seccion)=>(
+				links.map((seccion, index)=>(
 					<LinkChakra
+					 	key={index}
 						offset={-60}
 						to={seccion[0]}
 						smooth={true}

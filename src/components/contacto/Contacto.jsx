@@ -7,22 +7,22 @@ export const Contacto = () => {
   const contactos = {
     "whatsapp" : 
     ['https://api.whatsapp.com/send/?phone=%2B541135654619&text=Hola+NSB%2C+me+interesan+los+servicios+que+ofrecen%2C+puntualmente+quisiera+m%C3%A1s+informaci%C3%B3n+sobre+...+&type=phone_number&app_absent=0',
-    'logos/whatsapp.svg', 'Whatsapp','green.300','#000'],
+    'logos/whatsapp.svg', 'Whatsapp'],
 
     'linkedin' : [
-      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/linkedin.svg','Linkedin','blue.400','#000'
+      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/linkedin.svg','Linkedin'
     ],
 
     'pink' : [
-      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/instagram.svg','Instagram','blue.400','#000'
+      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/instagram.svg','Instagram'
     ],
 
     'facebook' : [
-      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/facebook.svg','Facebook','blue.400','#000'
+      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/facebook.svg','Facebook'
     ],
 
     'orange' : [
-      'mailto:consultingevolutiva@consultingevolutiva.com', 'logos/mail.svg', 'Mail','yellow.400','#000'
+      'mailto:consultingevolutiva@consultingevolutiva.com', 'logos/mail.svg', 'Mail'
     ]
   }
 
