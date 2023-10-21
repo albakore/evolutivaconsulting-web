@@ -9,7 +9,7 @@ export default function Footer() {
 		<Container maxW={{base: '6xl', lg: '6xl'}} paddingBlock={5}>
 			<HStack justifyContent={'space-between'} alignContent={'center'}>
 				<Box>
-				  <Text fontSize={{ base: "13px", md: "13px", lg:'1.5rem' }}>© 2023 Evolutiva Consulting, Inc. Todos los derechos reservados.</Text>
+				  <Text fontSize={{ base: "sm", md: "sm", lg:'sm' }}>© 2023 Evolutiva Consulting, Inc. Todos los derechos reservados.</Text>
 				</Box>
 				<HStack >
           <Link target='_blank' width={'fit-content'} margin={0} href="https://api.whatsapp.com/send/?phone=%2B541135654619&text=Hola+NSB%2C+me+interesan+los+servicios+que+ofrecen%2C+puntualmente+quisiera+m%C3%A1s+informaci%C3%B3n+sobre+...+&type=phone_number&app_absent=0" mr={2}>

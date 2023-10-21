@@ -72,7 +72,12 @@ export default function Home() {
       
       <Divider borderColor='gray.300' />
       
+
+      <Seccion id='clientes'>
+      <Text fontSize={'3xl'} textAlign={'center'}>Nuestros clientes</Text>
+
       <ImageScroll></ImageScroll>
+      </Seccion>
       <Footer />
       
     </Box>

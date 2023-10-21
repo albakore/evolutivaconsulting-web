@@ -10,26 +10,27 @@ export default function ImageScroll() {
 	100% { transform: translateX(-100%); }
 	`;
 
-	const animation = `${animationKeyframes} 7s linear infinite`;
+	const animation = `${animationKeyframes} 10s linear infinite`;
   
 	const listaImagenes = [
-	  "https://picsum.photos/100",
-	  "https://picsum.photos/102",
-	  "https://picsum.photos/103",
-	  "https://picsum.photos/104",
-	  "https://picsum.photos/105",
-	  "https://picsum.photos/106",
-	  "https://picsum.photos/107",
-	  "https://picsum.photos/108"
+		"clientes/doral florida.jpg",
+		"clientes/eluter.png",
+		"clientes/fen_distribuidora.jpg",
+		"clientes/GCBA.png",
+		"clientes/konrad.png",
+		"clientes/legislatura.png",
+		"clientes/limache.png",
+		"clientes/LogoCongreso.png",
+		"clientes/webhaus.jpg"
 	]
   
 	const lista = listaImagenes.map((imagen,index)=>{
-		return <Image key={index} src={imagen} alt='imagen' />
+		return <Image key={index} src={imagen} w={180} alt='imagen' />
 	})
   
 	return (
 	  	<Seccion id="contacto">
-		
+				
 				<HStack gap={0} position={'relative'} overflow={'hidden'}  >
 					<Box pointerEvents={'none'} borderRadius={'3px'} w='100%' h={'100%'} top={0} left={0} zIndex={200} position={'absolute'} background={'linear-gradient(to right, #ffff, transparent, transparent, #ffff)'} boxShadow='0px 0px 0px 0px white outset'></Box>
 					
