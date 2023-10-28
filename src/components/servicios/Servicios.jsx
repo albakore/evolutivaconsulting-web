@@ -15,7 +15,7 @@ export const Servicios = () => {
       <ItemServicio 
         
         numero='01'
-        titulo='Construcción de Marca.'
+        titulo='Construcción de Marca'
         >
           <Text> Investigación de mercado y posicionamiento.  </Text>
           <Text> Diferenciación y valor agregado </Text>
@@ -24,7 +24,7 @@ export const Servicios = () => {
       <ItemServicio 
         color={'cyan.50'}
         numero='02'
-        titulo='Marketing Digital.'
+        titulo='Marketing Digital'
         >
           <Text> Content manager  </Text>
           <Text> Planificación estratégica creativa, seguimiento y métricas. </Text>
@@ -36,7 +36,7 @@ export const Servicios = () => {
       
       <ItemServicio 
         numero='03'
-        titulo='Sitios Web.'
+        titulo='Sitios Web'
         >
           <Text> Desarrollo web. </Text>
           <Text> Posicionamiento SEM. </Text>
@@ -46,7 +46,7 @@ export const Servicios = () => {
       <ItemServicio 
         color={'cyan.50'}
         numero='04'
-        titulo='CRM.'
+        titulo='CRM'
         >
           <Text> Construcción de base de datos. </Text>
           <Text> Campaña de email marketing. </Text>
@@ -56,7 +56,7 @@ export const Servicios = () => {
       
       <ItemServicio 
         numero='05'
-        titulo='Coaching.'
+        titulo='Coaching'
         >
           <Text> Análisis de discurso. </Text>
           <Text> Técnica discursiva. </Text>
@@ -65,7 +65,7 @@ export const Servicios = () => {
       <ItemServicio
         color={'cyan.50'}
         numero='06'
-        titulo='Capacitaciones.'
+        titulo='Capacitaciones'
         >
           <Text> Redes sociales. </Text>
           <Text> Coaching. </Text>
@@ -73,7 +73,7 @@ export const Servicios = () => {
       
       <ItemServicio 
         numero='07'
-        titulo='Comunicación estratégica.'
+        titulo='Comunicación estratégica'
         >
           <Text> Diseño de mensajes políticos efectivos y elaboración de discursos y comunicados de prensa. </Text>
       </ItemServicio>
