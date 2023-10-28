@@ -6,7 +6,7 @@ export const Contacto = () => {
 //url, logo, texto, color, color de fuente
   const contactos = {
     "whatsapp" : 
-    ['https://api.whatsapp.com/send/?phone=%2B541135654619&text=Hola+NSB%2C+me+interesan+los+servicios+que+ofrecen%2C+puntualmente+quisiera+m%C3%A1s+informaci%C3%B3n+sobre+...+&type=phone_number&app_absent=0',
+    ['https://api.whatsapp.com/send/?phone=%2B5491165793662&text=Hola+Evolutiva+Consulting%2C+me+interesan+los+servicios+que+ofrecen%2C+puntualmente+quisiera+m%C3%A1s+informaci%C3%B3n+sobre+...+&type=phone_number&app_absent=0',
     'logos/whatsapp.svg', 'Whatsapp'],
 
     'linkedin' : [
@@ -14,11 +14,11 @@ export const Contacto = () => {
     ],
 
     'pink' : [
-      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/instagram.svg','Instagram'
+      'https://www.instagram.com/evolutivaconsulting/','logos/instagram.svg','Instagram'
     ],
 
     'facebook' : [
-      'https://www.linkedin.com/company/evolutiva-consulting/about/','logos/facebook.svg','Facebook'
+      'https://www.facebook.com/consultoraevolutiva','logos/facebook.svg','Facebook'
     ],
 
     'orange' : [
