@@ -1,6 +1,6 @@
 'use client'
 
-import { Text, HStack, VStack, Flex,Box, StackDivider,Divider } from "@chakra-ui/react"
+import { Text } from "@chakra-ui/react"
 import Navbar from "@/components/navbar/Navbar"
 import Hero from "@/components/hero/Hero"
 import Seccion from "@/components/seccion/Seccion"
