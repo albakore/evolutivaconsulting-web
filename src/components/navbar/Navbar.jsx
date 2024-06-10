@@ -1,4 +1,5 @@
 import React from 'react'
+import { Text,Box,Flex,HStack,Link,Button,Heading,Container,Spacer } from '@chakra-ui/react'
 import {NextLink} from 'next/link'
 import { Text,Box,Flex,HStack,Button,Heading,Container,Spacer,Image, Link as LinkChakra,Input, IconButton } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
@@ -15,8 +16,11 @@ import {
 import { useEffect } from 'react'
 
 
-export default function Navbar({ maxWidth }) {
+export default function Navbar() {
   return (
+	<Box p={5}>
+		<HStack>
+		<Heading>Evolutiva</Heading>
 	<Container zIndex={'1000'} position={'fixed'} top={0} backgroundColor={'white'} boxShadow={'md'} as='header' maxW={ maxWidth } paddingBlock={5}>
 		<HStack as='nav'   >
 		<Image src={'logos/LogoColor_EC.svg'} w={{base: '100px',lg: '200px'}} alt='evolutiva consulting' />
@@ -28,6 +32,9 @@ export default function Navbar({ maxWidth }) {
 		<Link>Clientes</Link>
 		<Link>Contacto</Link>
 		</HStack>
+	</Box>
+  )
+}
 	</Container>
   )
 }	
