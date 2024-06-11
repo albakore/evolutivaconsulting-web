@@ -1,6 +1,6 @@
 import React from 'react'
-import Seccion from './Seccion'
 import { Flex,Text,HStack,VStack,StackDivider } from '@chakra-ui/react'
+import Seccion from './Seccion'
 
 export default function ItemServicio({numero,titulo, children, color}) {
   return (

@@ -1,6 +1,6 @@
 import { Flex, Image, Box, keyframes, HStack, VStack } from '@chakra-ui/react'
-import Seccion from '../seccion/Seccion';
 import React from 'react'
+import Seccion from '../seccion/Seccion';
 
 export default function ImageScroll() {
 	const [isHover, setHover] = React.useState(false)

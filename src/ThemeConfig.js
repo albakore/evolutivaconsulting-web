@@ -1,7 +1,7 @@
 import { extendTheme } from "@chakra-ui/react"
 import "@fontsource/montserrat";
 
-export const themeConfig = extendTheme(
+export const ThemeConfig = extendTheme(
 	{
 		//colors: {...},
 		fonts: {
@@ -12,3 +12,5 @@ export const themeConfig = extendTheme(
 		},
 	}
 )
+
+export default ThemeConfig

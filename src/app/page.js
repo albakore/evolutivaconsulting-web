@@ -1,18 +1,18 @@
 'use client'
-import { Text, HStack, VStack, Flex, Box, StackDivider, Divider } from "@chakra-ui/react"
-import Navbar from "@/components/navbar/Navbar"
-import Hero from "@/components/hero/Hero"
-import Seccion from "@/components/seccion/Seccion"
-import Footer from "@/components/footer/Footer"
-import { Servicios } from "@/components/servicios/Servicios"
-import ImageScroll from "@/components/scroll/ImageScroll"
-import DotBackground from "@/components/background/DotBackground"
-import QuienesSomos from "@/components/quienesSomos/QuienesSomos"
-import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import { themeConfig } from '@/ThemeConfig'
+import { Text, HStack, VStack, Flex, Box, StackDivider, Divider, ChakraProvider } from "@chakra-ui/react"
+import Navbar from "../components/navbar/Navbar"
+import Hero from "../components/hero/Hero"
+import Seccion from "../components/seccion/Seccion"
+import QuienesSomos from "../components/QuienesSomos/QuienesSomos"
+import { Servicios } from "../components/Servicios/Servicios"
+import ImageScroll from "../components/imagescroll/ImageScroll"
+import DotBackground from "../components/dotbackground/DotBackground"
+import Footer from "../components/footer/Footer"
+import ThemeConfig from "../ThemeConfig"
+
 export default function Home() {
     return (
-        <ChakraProvider resetCSS theme={themeConfig}>
+        <ChakraProvider resetCSS theme={ThemeConfig}>
 
 
             <Box as={'main'} mt={{ base: '80px', lg: '115px' }} style={{ overflow: 'hidden' }}>
@@ -79,7 +79,7 @@ export default function Home() {
                 <Seccion id='clientes'>
                     <Text fontSize={'3xl'} textAlign={'center'}>Nuestros clientes</Text>
 
-                    <ImageScroll></ImageScroll>
+                    <ImageScroll/>
                 </Seccion>
                 <Footer />
 

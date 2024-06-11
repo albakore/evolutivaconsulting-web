@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-        <GoogleTagManager gtmId="G-VVTF1JYQ64" />
+        <GoogleTagManager gtmId="G-FYFEN1LWGW" />
       <head>
         <title>Evolutiva Consulting</title>
       </head>

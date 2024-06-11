@@ -1,8 +1,7 @@
 import React from 'react'
-import Seccion from "@/components/seccion/Seccion"
-import ItemServicio from "@/components/seccion/Servicios"
 import { Text, HStack, VStack, Flex,Box, StackDivider,Divider } from "@chakra-ui/react"
-
+import Seccion from '../seccion/Seccion'
+import ItemServicio from '../seccion/ItemServicio'
 export const Servicios = () => {
   return (
     <>
@@ -12,8 +11,7 @@ export const Servicios = () => {
         </Text>
       </Seccion>
 
-      <ItemServicio 
-        
+      <ItemServicio
         numero='01'
         titulo='Construcción de Marca'
         >
