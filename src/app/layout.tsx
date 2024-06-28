@@ -8,9 +8,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }) {
-    sendGTMEvent({
-        event: 'page_view',
-    })
+    
   return (
     <html lang="es">
         <GoogleTagManager gtmId="G-FYFEN1LWGW" />

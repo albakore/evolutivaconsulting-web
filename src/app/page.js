@@ -9,8 +9,16 @@ import ImageScroll from "../components/imagescroll/ImageScroll"
 import DotBackground from "../components/dotbackground/DotBackground"
 import Footer from "../components/footer/Footer"
 import ThemeConfig from "../ThemeConfig"
-
+import {sendGTMEvent } from '@next/third-parties/google'
+import React from "react"
 export default function Home() {
+    
+    React.useEffect(()=>{
+        sendGTMEvent({
+            event: 'page_view',
+        })
+    })
+
     return (
         <ChakraProvider resetCSS theme={ThemeConfig}>
 
