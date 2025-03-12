@@ -10,6 +10,7 @@ import DotBackground from "@/components/background/DotBackground"
 import QuienesSomos from "@/components/quienesSomos/QuienesSomos"
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { themeConfig } from '@/ThemeConfig'
+
 export default function Home() {
     return (
         <ChakraProvider resetCSS theme={themeConfig}>
@@ -73,14 +74,11 @@ export default function Home() {
 
                 <Servicios />
 
-                <Divider borderColor='gray.300' />
-
-
-                <Seccion id='clientes'>
+                {/* <Divider borderColor='gray.300' /> */}
+                {/* <Seccion id='clientes'>
                     <Text fontSize={'3xl'} textAlign={'center'}>Nuestros clientes</Text>
-
                     <ImageScroll></ImageScroll>
-                </Seccion>
+                </Seccion> */}
                 <Footer />
 
             </Box>
